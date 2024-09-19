@@ -1,0 +1,14 @@
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\Tugas_day2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\Tugas_day2.AssemblyInfoInputs.cache
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\Tugas_day2.AssemblyInfo.cs
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\Tugas_day2.csproj.CoreCompileInputs.cache
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\bin\Debug\net8.0\Tugas_day2.exe
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\bin\Debug\net8.0\Tugas_day2.deps.json
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\bin\Debug\net8.0\Tugas_day2.runtimeconfig.json
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\bin\Debug\net8.0\Tugas_day2.dll
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\bin\Debug\net8.0\Tugas_day2.pdb
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\Tugas_day2.dll
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\refint\Tugas_day2.dll
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\Tugas_day2.pdb
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\Tugas_day2.genruntimeconfig.cache
+C:\Users\Pongo\source\repos\day_1_training\Tugas_day2\obj\Debug\net8.0\ref\Tugas_day2.dll
