@@ -3,90 +3,17 @@ using System.Collections.Generic;
 
 namespace UserManagement
 {
-    // Kelas User sebagai kelas dasar
-    public class User
-    {
-        // Atribut 
-        public string Nama { get; set; }
-        public string Role { get; set; }
-        protected double eMoney; 
-
-        // Konstruktor untuk inisiasi User
-        public User(string nama, string role)
-        {
-            Nama = nama;
-            Role = role;
-            eMoney = 0;
-        }
-
-        // Method saldo
-        public double GetEMoney()
-        {
-            return eMoney;
-        }
-    }
-
-
-
-
-
-
-
-
-    // Kelas Admin 
-    public class Admin : User
-    {
-        // Konstruktor untuk inisiasi Admin
-        public Admin(string nama) : base(nama, "Admin")
-        {
-        }
-
-        // Method untuk menambah saldo customer
-        public void AddEMoney(Customer customer, double amount)
-        {
-            if (amount > 0)
-            {
-                customer.AddSaldo(amount);
-            }
-            else
-            {
-                throw new ArgumentException("Jumlah saldo harus lebih dari 0");
-            }
-        }
-    }
-
-
-
-    // Kelas Customer
-    public class Customer : User
-    {
-        // Konstruktor untuk inisiasi Customer
-        public Customer(string nama) : base(nama, "Customer")
-        {
-        }
-
-        // Method untuk jumlah saldo
-        internal void AddSaldo(double amount)
-        {
-            eMoney = eMoney + amount;
-        }
-    }
-
- 
-
-
-
-
-
     class Program
     {
         static void Main(string[] args)
         {
-            //objek Admin dan Customer
+            // Membuat objek Customer
             Customer carol = new Customer("Carol");
             Customer rian = new Customer("Rian");
-            carol.AddSaldo(10000); 
-            rian.AddSaldo(5000);   
+
+            // Mengatur saldo awal
+            carol.AddSaldo(1000000);
+            rian.AddSaldo(500000);
 
             Admin admin = null;
             Customer customer = null;
@@ -118,8 +45,8 @@ namespace UserManagement
                     admin = new Admin(namaAdmin);
 
                     Console.WriteLine("Pilih salah satu customer! ");
-                    Console.WriteLine("Carol ");
-                    Console.WriteLine("Rian ");
+                    Console.WriteLine("1. Carol ");
+                    Console.WriteLine("2. Rian ");
                     Console.Write("Masukan Nama ->> ");
 
                     string namaCustomer = Console.ReadLine();
@@ -160,10 +87,10 @@ namespace UserManagement
                 }
                 else if (choice == "2")
                 {
-                    Console.Write("Pilih salah satu customer! ");
-                    Console.WriteLine("Carol");
-                    Console.WriteLine("Rian");
-                    Console.Write("MAsukan nama: ");
+                    Console.WriteLine("Pilih salah satu customer: ");
+                    Console.WriteLine("1. Carol");
+                    Console.WriteLine("2. Rian");
+                    Console.Write("Masukkan nama: ");
                     string namaCustomer = Console.ReadLine();
 
                     if (namaCustomer == "Carol")
